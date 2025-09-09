@@ -1,0 +1,69 @@
+:root {
+  --color-primary: #006cbb;
+
+  --color-white: #fff;
+  --color-gray: #dfdfdf;
+  --color-black: #000;
+
+  --color-success: #01bd78;
+  --color-error: #d40019;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+}
+
+@font-face {
+  font-family: 'base';
+  font-weight: 400;
+  src: url('/fonts/400.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'base';
+  font-weight: 700;
+  src: url('/fonts/700.woff2') format('woff2');
+  font-display: swap;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  width: fit-content;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin: 12px 0;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
