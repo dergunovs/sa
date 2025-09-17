@@ -1,6 +1,4 @@
-# СА-422
-
-Продублировать ДЗ в группу @dergunovs
+# СА
 
 https://github.com/dergunovs/sa
 
