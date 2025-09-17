@@ -22,3 +22,5 @@ npm install
 
 - dev сервер
 - построение итогового приложения (build)
+
+Внутри VS code установить 4 плагина: eslint, stylelint, prettier, vue official
