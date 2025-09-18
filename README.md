@@ -13,12 +13,6 @@ npm install
 
 ---
 
-Фронтенд приложение на javascript
-Фреймворк Vue.js
-
-Для удобства разработки используем vite.js(тулинг):
-
-- dev сервер
-- построение итогового приложения (build)
-
 Внутри VS code установить 4 плагина: eslint, stylelint, prettier, vue official
+
+Помощь: qwen 3 coder
