@@ -2,7 +2,7 @@
 
 https://github.com/dergunovs/sa
 
-открыть терминал. в нём написать:
+Открыть терминал. в нём написать:
 git clone https://github.com/dergunovs/sa.git
 
 открыть vs code, в нём открыть появившуюся папку с проектом
