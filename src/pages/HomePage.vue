@@ -1,5 +1,5 @@
 <template>
   <div>
-    <button type="button">Кнопка</button>
+    111111
   </div>
 </template>
