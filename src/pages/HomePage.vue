@@ -1,5 +1,5 @@
 <template>
   <div>
-    <button type="button">Кнопка 2</button>
+    <button type="button">Кнопка 3</button>
   </div>
 </template>
