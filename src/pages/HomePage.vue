@@ -1,3 +1,5 @@
 <template>
-  <div>1</div>
+  <div>
+    <button type="button">Кнопка</button>
+  </div>
 </template>
