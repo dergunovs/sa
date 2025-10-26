@@ -1,5 +1,3 @@
 <template>
-  <div>
-    <button type="button">Кнопка 3</button>
-  </div>
+  <div>Тут что-то будет!</div>
 </template>

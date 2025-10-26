@@ -18,7 +18,6 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "baseUrl": "./",
-    "paths": { "@/*": ["src/modules/*"] },
     "types": ["vite/client", "vite-svg-loader", "node"],
     "noEmit": true
   },
