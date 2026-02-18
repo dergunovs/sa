@@ -28,6 +28,9 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
 }
 
 a {
@@ -37,11 +40,13 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin-top: 0;
   margin-bottom: 24px;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--color-text);
 }
 
 p {

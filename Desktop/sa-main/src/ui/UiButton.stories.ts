@@ -1,8 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/vue3-vite';
-
+import type { Meta, StoryObj } from '@storybook/vue3';
 import UiButton from './UiButton.vue';
 
-const meta = {
+const meta: Meta<typeof UiButton> = {
   title: 'UI/UiButton',
   component: UiButton,
   tags: ['autodocs'],
@@ -16,13 +15,13 @@ const meta = {
     },
     type: {
       control: 'select',
-      options: ['button', 'submit'],
+      options: ['submit', 'button'],
     },
   },
-} satisfies Meta<typeof UiButton>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof UiButton>;
 
 export const Primary: Story = {
   args: {
@@ -66,21 +65,6 @@ export const Disabled: Story = {
       return { args };
     },
     template: '<UiButton v-bind="args">Кнопка</UiButton>',
-  }),
-};
-
-export const Submit: Story = {
-  args: {
-    layout: 'primary',
-    isDisabled: false,
-    type: 'submit',
-  },
-  render: (args) => ({
-    components: { UiButton },
-    setup() {
-      return { args };
-    },
-    template: '<UiButton v-bind="args">Отправить</UiButton>',
   }),
 };
 

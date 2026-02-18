@@ -1,37 +1,10 @@
 {
   "name": "sa",
-  "description": "Vue 3 UI Component Library with Subnet Calculator",
-  "version": "1.0.0",
+  "description": "SA",
+  "version": "0.0.0",
   "type": "module",
   "private": false,
   "sideEffects": false,
-  "main": "./src/components/ui/index.ts",
-  "module": "./src/components/ui/index.ts",
-  "types": "./src/components/ui/index.ts",
-  "exports": {
-    ".": {
-      "import": "./src/components/ui/index.ts",
-      "types": "./src/components/ui/index.ts"
-    },
-    "./styles": "./src/styles/colors.scss"
-  },
-  "files": [
-    "src/components/ui",
-    "src/styles/colors.scss",
-    "src/docs"
-  ],
-  "keywords": [
-    "vue",
-    "vue3",
-    "components",
-    "ui",
-    "storybook",
-    "subnet-calculator"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dergunovs/sa.git"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -73,18 +46,15 @@
     "vue-eslint-parser": "10.2.0",
     "vue-linters-config": "0.5.4",
     "vue-tsc": "3.1.2",
-    "storybook": "^10.2.10",
-    "@storybook/vue3-vite": "^10.2.10",
-    "@chromatic-com/storybook": "^5.0.1",
-    "@storybook/addon-vitest": "^10.2.10",
-    "@storybook/addon-a11y": "^10.2.10",
-    "@storybook/addon-docs": "^10.2.10",
-    "@storybook/addon-onboarding": "^10.2.10",
-    "eslint-plugin-storybook": "^10.2.10",
-    "vitest": "^4.0.18",
-    "playwright": "^1.58.2",
-    "@vitest/browser-playwright": "^4.0.18",
-    "@vitest/coverage-v8": "^4.0.18"
+    "@storybook/vue3": "^8.3.0",
+    "@storybook/vue3-vite": "^8.3.0",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-interactions": "^8.3.0",
+    "@storybook/addon-links": "^8.3.0",
+    "@storybook/addon-docs": "^8.3.0",
+    "@storybook/blocks": "^8.3.0",
+    "@storybook/test": "^8.3.0",
+    "storybook": "^8.3.0"
   },
   "engines": {
     "npm": "11",

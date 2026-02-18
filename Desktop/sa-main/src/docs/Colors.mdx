@@ -4,7 +4,7 @@ import { ColorPalette } from '@storybook/blocks';
 
 # Colors
 
-This document describes the color palette used in the component library.
+Цветовая палитра библиотеки компонентов.
 
 ## Primary Colors
 
@@ -12,37 +12,12 @@ This document describes the color palette used in the component library.
   <ColorPalette.Item
     title="Primary"
     subtitle="--color-primary"
-    colors={{ 'Primary Blue': '#006cbb' }}
+    colors={{ '#006cbb': 'Primary (#006cbb)' }}
   />
   <ColorPalette.Item
     title="Primary Hover"
     subtitle="--color-primary-hover"
-    colors={{ 'Primary Blue Hover': '#005a9a' }}
-  />
-  <ColorPalette.Item
-    title="Primary Active"
-    subtitle="--color-primary-active"
-    colors={{ 'Primary Blue Active': '#004877' }}
-  />
-</ColorPalette>
-
-## Secondary Colors
-
-<ColorPalette>
-  <ColorPalette.Item
-    title="Secondary"
-    subtitle="--color-secondary"
-    colors={{ 'Secondary Gray': '#6c757d' }}
-  />
-  <ColorPalette.Item
-    title="Secondary Hover"
-    subtitle="--color-secondary-hover"
-    colors={{ 'Secondary Gray Hover': '#5a6268' }}
-  />
-  <ColorPalette.Item
-    title="Secondary Active"
-    subtitle="--color-secondary-active"
-    colors={{ 'Secondary Gray Active': '#484f54' }}
+    colors={{ '#005a9e': 'Primary Hover (#005a9e)' }}
   />
 </ColorPalette>
 
@@ -52,27 +27,27 @@ This document describes the color palette used in the component library.
   <ColorPalette.Item
     title="White"
     subtitle="--color-white"
-    colors={{ White: '#fff' }}
+    colors={{ '#fff': 'White (#fff)' }}
   />
   <ColorPalette.Item
     title="Gray"
     subtitle="--color-gray"
-    colors={{ Gray: '#dfdfdf' }}
+    colors={{ '#dfdfdf': 'Gray (#dfdfdf)' }}
   />
   <ColorPalette.Item
     title="Gray Light"
     subtitle="--color-gray-light"
-    colors={{ 'Gray Light': '#f5f5f5' }}
+    colors={{ '#f5f5f5': 'Gray Light (#f5f5f5)' }}
   />
   <ColorPalette.Item
     title="Gray Dark"
     subtitle="--color-gray-dark"
-    colors={{ 'Gray Dark': '#adb5bd' }}
+    colors={{ '#999': 'Gray Dark (#999)' }}
   />
   <ColorPalette.Item
     title="Black"
     subtitle="--color-black"
-    colors={{ Black: '#000' }}
+    colors={{ '#000': 'Black (#000)' }}
   />
 </ColorPalette>
 
@@ -82,34 +57,25 @@ This document describes the color palette used in the component library.
   <ColorPalette.Item
     title="Success"
     subtitle="--color-success"
-    colors={{ Success: '#01bd78' }}
+    colors={{ '#01bd78': 'Success (#01bd78)' }}
   />
   <ColorPalette.Item
     title="Error"
     subtitle="--color-error"
-    colors={{ Error: '#d40019' }}
-  />
-  <ColorPalette.Item
-    title="Warning"
-    subtitle="--color-warning"
-    colors={{ Warning: '#ffc107' }}
-  />
-  <ColorPalette.Item
-    title="Info"
-    subtitle="--color-info"
-    colors={{ Info: '#17a2b8' }}
+    colors={{ '#d40019': 'Error (#d40019)' }}
   />
 </ColorPalette>
 
 ## Usage
 
-All colors are defined as CSS custom properties (variables) in `src/styles/colors.scss`. You can use them in your components like this:
+Все цвета определены как CSS переменные в файле `src/styles/colors.scss` и могут быть использованы в компонентах через `var(--color-name)`.
+
+Пример:
 
 ```scss
-.my-component {
+.button {
   background-color: var(--color-primary);
   color: var(--color-white);
-  border: 1px solid var(--color-border);
 }
 ```
 
