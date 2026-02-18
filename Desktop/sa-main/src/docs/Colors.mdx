@@ -1,0 +1,82 @@
+import { ColorPalette } from '@storybook/blocks';
+
+<Meta title="Design System/Colors" />
+
+# Colors
+
+Цветовая палитра библиотеки компонентов.
+
+## Primary Colors
+
+<ColorPalette>
+  <ColorPalette.Item
+    title="Primary"
+    subtitle="--color-primary"
+    colors={{ '#006cbb': 'Primary (#006cbb)' }}
+  />
+  <ColorPalette.Item
+    title="Primary Hover"
+    subtitle="--color-primary-hover"
+    colors={{ '#005a9e': 'Primary Hover (#005a9e)' }}
+  />
+</ColorPalette>
+
+## Neutral Colors
+
+<ColorPalette>
+  <ColorPalette.Item
+    title="White"
+    subtitle="--color-white"
+    colors={{ '#fff': 'White (#fff)' }}
+  />
+  <ColorPalette.Item
+    title="Gray"
+    subtitle="--color-gray"
+    colors={{ '#dfdfdf': 'Gray (#dfdfdf)' }}
+  />
+  <ColorPalette.Item
+    title="Gray Light"
+    subtitle="--color-gray-light"
+    colors={{ '#f5f5f5': 'Gray Light (#f5f5f5)' }}
+  />
+  <ColorPalette.Item
+    title="Gray Dark"
+    subtitle="--color-gray-dark"
+    colors={{ '#999': 'Gray Dark (#999)' }}
+  />
+  <ColorPalette.Item
+    title="Black"
+    subtitle="--color-black"
+    colors={{ '#000': 'Black (#000)' }}
+  />
+</ColorPalette>
+
+## Status Colors
+
+<ColorPalette>
+  <ColorPalette.Item
+    title="Success"
+    subtitle="--color-success"
+    colors={{ '#01bd78': 'Success (#01bd78)' }}
+  />
+  <ColorPalette.Item
+    title="Error"
+    subtitle="--color-error"
+    colors={{ '#d40019': 'Error (#d40019)' }}
+  />
+</ColorPalette>
+
+## Usage
+
+Все цвета определены как CSS переменные в файле `src/styles/colors.scss` и могут быть использованы в компонентах через `var(--color-name)`.
+
+Пример:
+
+```scss
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+```
+
+
