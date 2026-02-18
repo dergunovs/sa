@@ -24,3 +24,4 @@ export function getAddressesCount(mask: string): number {
   return Math.pow(2, zeros) - 2;
 }
 
+
